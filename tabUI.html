@@ -14,7 +14,7 @@
 	function changeTap(target){
 		target.add
 	}
-	
+
 	window.onload = function(){
 		document.querySelectorAll(".tab").forEach(function (tab){
 			tab.addEventListener("click",function(){
@@ -30,7 +30,7 @@
             <header class="mainHeader" ><img src="https://avatars1.githubusercontent.com/u/1456761?v=3&s=140" width="80" >
                 <div class="userId" ><span > </span><span >nigayo</span><span > </span>
                 </div>
-                <div class="userMessage" ><span > </span><span >?�녕?�세??nigayo?�니??</span><span > </span>
+                <div class="userMessage" ><span > </span><span >?�녕?�세??nigayo?�니??</span><span > </span>
                 </div>
                 <ul class="userSNSInfo" >
                     <li ><span >review : </span><span class="count" >10</span><span > | </span>
@@ -42,13 +42,13 @@
                 </ul>
             </header>
             <nav >
-                <div class="tab selectedTab" id="position" ><span > </span><span >aboutMe</span><span > </span>
+                <div class="tab selectedTab" id="position" tab-url="http://jsonplaceholder.typicode.com/posts/1"><span > </span><span >aboutMe</span><span > </span>
                 </div>
-                <div class="tab" id="friend" ><span > </span><span >friend</span><span > </span>
+                <div class="tab" id="friend" tab-url="http://jsonplaceholder.typicode.com/posts/2"><span > </span><span >friend</span><span > </span>
                 </div>
-                <div class="tab" id="theme" ><span > </span><span >lorem</span><span > </span>
+                <div class="tab" id="theme" tab-url="http://jsonplaceholder.typicode.com/posts/3"><span > </span><span >lorem</span><span > </span>
                 </div>
-                <div class="tab" id="news" ><span > </span><span >repository</span><span > </span>
+                <div class="tab" id="news" tab-url="http://jsonplaceholder.typicode.com/posts/4"><span > </span><span >repository</span><span > </span>
                 </div>
             </nav>
             <section id="my_position" class="eleDisplayShow" >
@@ -65,4 +65,6 @@
         </div>
     </div>
 </body>
+<script src="./tabUI.js">
+</script>
 </html>
